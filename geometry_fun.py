@@ -16,23 +16,39 @@ import math
 
 PI = 3.1416
 positive_number = int(input("Give a whole, positive number: "))
+number_of_sides = int(input("Give a whole, positive number of sides: "))
 positive_radius = int(positive_number / 2)
 
 square_peri = (positive_number * 4)
 square_area = (positive_number * 2)
-
 circle_radius = (positive_number / 2)
 circle_circumference = (positive_number * PI)
-circle_area = PI * math.pow (positive_radius, 2)
+circle_area = PI * math.pow(positive_radius, 2)
 
 eq_triangle_perimeter = (positive_number * 3)
-eq_triangle_height = (1/2(math.sqrt (3 * positive_number)))
-eq_triangle_area = round(math.sqrt(3/4) * math.pow (positive_number 2),3)
-print ("\t A square with the chosen perimeter is /n", square_peri)
-print ("\t A square with the chosen area is /n", square_area)
-print ("\t The circle with the chosen circumference is ", circle_circumference)
-print ("\t The circle with the chosen area is ", circle_area)
-print ("\t The equilateral triangle with the chosen perimeter is ", eq_triangle_perimeter)
-print ("\t The equilateral triangle with the chosen height is "), eq_triangle_height
-#MAKE SURE THAT YOU ROUND TO THE 3RD DECIMAL
+eq_triangle_height = (1/2*(math.sqrt(3 * positive_number)))
+eq_triangle_area = (math.sqrt(3/4) * math.pow(positive_number,2))
+
+polygon_apothem = positive_number/(2 * 2(math.tan) * (180/number_of_sides))
+polygon_peri = positive_number * number_of_sides
+polygon_area = (1/2) * (polygon_apothem * polygon_apothem)
+
+print ("A square with a side length of", round(positive_number, 3))
+print ("\t Has a perimeter of", round(square_peri, 3))
+print ("\t Has a area of", round(square_peri, 3))
+
+print ("A circle with a diameter of", round(positive_number, 3))
+print ("\t Has a radius of", round(circle_radius, 3))
+print ("\t Has a circumference of", round(circle_circumference, 3))
+print ("\t Has an area of", round(circle_area, 3))
+
+print ("An equilateral triangle with a side length of", round(positive_number, 3))
+print ("\t Has a perimeter of", round (eq_triangle_perimeter, 3))
+print ("\t Has an area of", round (eq_triangle_area, 3))
+
+print ("A normal polygon with the side number of", number_of_sides + "and the side length of ", positive_number)
+print ("\t Has a apothem of", round (polygon_apothem, 3))
+print ("\t Has a perimeter of", round (polygon_peri, 3))
+print ("\t Has a area of", round(polygon_area, 3))
+
 

@@ -1,0 +1,8 @@
+my_name = input("what is your name? ")
+print (my_name)
+print(type(my_name))
+my_age = int(input("How old are you? "))
+print (my_age)
+print ("Next year you will be", my_age+1)
+print (type(my_age))
+print(my_name,", Next year you will be", my_age+1)
